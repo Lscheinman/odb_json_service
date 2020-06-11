@@ -1290,7 +1290,8 @@ class ODB:
         :param kwargs:
         :return:
         """
-        sql = "TRAVERSE * from %s WHILE $depth <= 2" % nodekey
+        # sql = "TRAVERSE * from %s WHILE $depth <= 2" % nodekey
+        sql = "TRAVERSE * from %s WHILE $depth <= 2 LIMIT 500" % nodekey
         click.echo('[%s_get_neighbors_index] Getting the full entity %s' % (get_datetime(), nodekey))
         # Run the first sql to get the full entity with neighbors
         r = self.client.command(sql)
