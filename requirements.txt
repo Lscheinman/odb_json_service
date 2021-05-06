@@ -10,7 +10,7 @@ Click==7.0
 click-plugins==1.1.1
 colorama==0.4.1
 Flask==1.0.3
-Flask-Cors==3.0.8
+Flask-Cors==3.0.9
 Flask-Mail==0.9.1
 flask-restplus==0.12.1
 geographiclib==1.50
